@@ -1,0 +1,28 @@
+
+
+body{
+	background-color: #3F3F3C;
+}
+
+iframe{
+	border: none;
+	width: 99%;
+	background: #ffffff;
+	height: 98vh;
+	/*border-radius: 20px;*/
+}
+
+.ta{
+	
+	background-color: white;
+}
+
+.frame{
+	padding-left: 5px;
+    padding-right: 0px;
+}
+
+.webuts{
+	margin-left: 0vw;
+	width: 10vw;
+}
