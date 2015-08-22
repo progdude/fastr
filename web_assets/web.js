@@ -5,7 +5,7 @@ var try1;
 var i=0;
 
 
-  	
+  	//codemirror info
     js = CodeMirror.fromTextArea(document.getElementById('jsyo'), {
         mode: "javascript",
         theme: 'monokai',
