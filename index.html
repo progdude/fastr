@@ -41,7 +41,35 @@
 
 
   <!--Custom js-->
-  
+  <script type="text/javascript">
+var nw = require('nw.gui');
+
+    // Window menu
+    var windowMenu = new nw.Menu({
+        type: 'menubar'
+    });
+
+    // Help menu
+    var helpMenu = new nw.Menu();
+
+    // Add to window menu
+    windowMenu.append(new nw.MenuItem({
+        label: 'Help',
+        submenu: helpMenu
+    }));
+
+    // About sub-entry
+    helpMenu.append(new nw.MenuItem({
+        label: 'about',
+        click: function(){
+            alert('I made this!');
+        }
+    }));
+
+    // Assign to window
+    nw.Window.get().menu = windowMenu;
+
+  </script>
 
 
 </head>

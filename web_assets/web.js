@@ -1,3 +1,10 @@
+onload = function(){
+	//win.show();
+	//win.maximize();
+}
+
+
+
 var html;
 var js;
 var css;
@@ -152,6 +159,8 @@ function submit(){
 		connect(c);
 	});
 }
+
+
 
 
 
