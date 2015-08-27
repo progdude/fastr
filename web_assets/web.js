@@ -1,6 +1,6 @@
 onload = function(){
-	//win.show();
-	//win.maximize();
+	win.show();
+	win.maximize();
 }
 
 

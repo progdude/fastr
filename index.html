@@ -50,21 +50,37 @@ var nw = require('nw.gui');
     });
 
     // Help menu
-    var helpMenu = new nw.Menu();
+    var fileMenu = new nw.Menu();
 
     // Add to window menu
     windowMenu.append(new nw.MenuItem({
-        label: 'Help',
+        label: 'File',
         submenu: helpMenu
     }));
 
     // About sub-entry
     helpMenu.append(new nw.MenuItem({
-        label: 'about',
+        label: 'Save HTML',
         click: function(){
-            alert('I made this!');
+          
         }
     }));
+
+    helpMenu.append(new nw.MenuItem({
+        label: 'Save CSS',
+        click: function(){
+          
+        }
+    }));
+
+    helpMenu.append(new nw.MenuItem({
+        label: 'Save JavaScript',
+        click: function(){
+          
+        }
+    }));
+
+
 
     // Assign to window
     nw.Window.get().menu = windowMenu;
@@ -149,6 +165,7 @@ var nw = require('nw.gui');
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="web_assets/web.js"></script>
+  <script type ="text/javascript" src="web_assets/file.js"></script>
 </body>
 
 </html>
