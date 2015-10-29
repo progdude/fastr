@@ -39,53 +39,8 @@
   <!--jquery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
+  <script type="text/javascript" src="web_assets/file_system.js"></script>
 
-  <!--Custom js-->
-  <script type="text/javascript">
-var nw = require('nw.gui');
-
-    // Window menu
-    var windowMenu = new nw.Menu({
-        type: 'menubar'
-    });
-
-    // Help menu
-    var fileMenu = new nw.Menu();
-
-    // Add to window menu
-    windowMenu.append(new nw.MenuItem({
-        label: 'File',
-        submenu: helpMenu
-    }));
-
-    // About sub-entry
-    helpMenu.append(new nw.MenuItem({
-        label: 'Save HTML',
-        click: function(){
-          
-        }
-    }));
-
-    helpMenu.append(new nw.MenuItem({
-        label: 'Save CSS',
-        click: function(){
-          
-        }
-    }));
-
-    helpMenu.append(new nw.MenuItem({
-        label: 'Save JavaScript',
-        click: function(){
-          
-        }
-    }));
-
-
-
-    // Assign to window
-    nw.Window.get().menu = windowMenu;
-
-  </script>
 
 
 </head>
@@ -95,6 +50,8 @@ var nw = require('nw.gui');
 
   <div class="row">
     <div class="col-md-6">
+
+      <input id="files" type="file" style="display:none">
 
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist" id="menu">
